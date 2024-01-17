@@ -11,13 +11,16 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/custom_theme/css/custom_theme.css"
+app_include_css = "/assets/custom_theme/css/custom_theme.css"
 # app_include_js = "/assets/custom_theme/js/custom_theme.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/custom_theme/css/custom_theme.css"
+web_include_css = "/assets/custom_theme/css/custom_theme.css"
 # web_include_js = "/assets/custom_theme/js/custom_theme.js"
-
+web_include_js = [
+    "custom_theme.bundle.js"
+    # "/assets/erp_jordan/js/test.js"
+]
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "custom_theme/public/scss/website"
 
@@ -27,7 +30,10 @@ app_license = "MIT"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
-
+page_js = {
+    "page": "/assets/custom_theme/js/custom_theme.js",
+    "dashboard-view": "public/js/page/dashboard_view/dashboard_view.js"
+}
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
