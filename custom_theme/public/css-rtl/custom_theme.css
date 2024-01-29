@@ -151,7 +151,7 @@ i.fa {
 .page-head .btn.btn-default,
 .page-head div#driver-popover-item .driver-popover-footer button.btn-default,
 .page-head .btn.btn-primary {
-    background: var(--DF-color-primary);
+    background: var(--btn-bg-color);
     color: var(--btn-text-color);
     box-shadow: none;
     height: 32px !important;
@@ -178,7 +178,7 @@ i.fa {
 
 .page-head .btn.btn-default:hover,
 .page-head .btn.btn-primary:hover {
-    background: var(--DF-color-primary-dark);
+    background: var(--btn-hover-bg-color);
     color: var(--btn-hover-text-color);
     /* border-color: var(--btn-hover-text-color); */
     border-color: var(--btn-hover-bg-color);
@@ -660,7 +660,7 @@ input {
 
 /* Custom */
 
-header .nav-item>a {
+.nav-item>a {
     width: 40px;
     height: 40px;
     border-radius: 12px;
@@ -686,6 +686,15 @@ header .nav-item>a {
 .nav-link{
     overflow: hidden;
 }
+
+.btn.btn-secondary{
+    background-color: var(--DF-color-primary) !important;
+}
+
+.btn.btn-secondary:hover{
+    background-color: var(--DF-color-primary-dark);
+}
+
 
 .widget.custom-block-widget-box{
     background: transparent;
