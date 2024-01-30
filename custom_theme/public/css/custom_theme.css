@@ -660,7 +660,7 @@ input {
 
 /* Custom */
 
-header .nav-item>a {
+header ul.navbar-nav .nav-item > a {
     width: 40px;
     height: 40px;
     border-radius: 12px;
@@ -675,7 +675,7 @@ header .nav-item>a {
     border-radius: 12px;
     height: 40px
 }
-.avatar{
+header .dropdown-navbar-user .avatar{
     width: 100%;
     height: 100%
 }
@@ -689,4 +689,11 @@ header .nav-item>a {
 
 .widget.custom-block-widget-box{
     background: transparent;
+}
+
+
+.ml-auto.navbar-nav
+{
+  margin-left: auto;
+  margin-right: 10% !important;
 }
