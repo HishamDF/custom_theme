@@ -56,8 +56,9 @@
     --site-color-blue-hover-dark: #039bc5;
     --site-color-dark-blue-hover-dark: #211d61;
     --site-color-purple-dark-hover: #b9337d;
-    --site-text-lg: 16px;
-    --site-text-md: 14px;
+    
+    --fw-semibold: 600;
+    --fw-bold: 700;
 
     --DF-color-bg: #F1F6FA;
     --DF-color-primary: #63A0C9;
@@ -115,7 +116,7 @@ i.fa {
 }
 
 .desk-sidebar .standard-sidebar-label {
-    font-size: var(--site-text-md);
+    font-size: var(--text-md);
     color: var(--theme-text-color);
     font-weight: bold;
 }
@@ -220,7 +221,7 @@ i.fa {
 .widget.links-widget-box .link-item .link-content {
     color: var(--site-color-dark-blue);
     font-weight: 600;
-    font-size: var(--site-text-md);
+    font-size: var(--text-md);
 }
 
 .widget.links-widget-box .link-item:first-child {
@@ -248,10 +249,6 @@ i.fa {
     background: var(--site-color-blue);
 } */
 
-.desk-page .widget-group .widget-group-body .links-widget-box {
-    transition: all 0.25s ease;
-}
-
 .list-sidebar .list-filters input {
     background: transparent;
     border: 1px solid #ddd;
@@ -260,7 +257,7 @@ i.fa {
 
 .desk-page .widget-group .widget-group-body .links-widget-box:hover {
     box-shadow: var(--shadow-lg);
-    transition: all 0.25s ease;
+    transition: all 0.15s ease;
 }
 
 
@@ -341,7 +338,7 @@ i.fa {
 }
 
 .navbar-home img {
-    /* width: 140px !important; */
+    width: 140px !important;
     max-height: fit-content !important;
 }
 
@@ -536,7 +533,7 @@ i.fa {
 
 .widget.shortcut-widget-box .widget-title .ellipsis {
     color: var(--btn-text-color);
-    font-size: var(--site-text-lg);
+    font-size: var(--text-lg);
 }
 
 .widget.shortcut-widget-box .widget-title svg.icon-xs {
@@ -561,7 +558,7 @@ i.fa {
 .widget.links-widget-box,
 .widget.number-widget-box {
     background-color: var(--site-widget-bg);
-    box-shadow: 0px 0px 4px var(--gray-400) !important;
+    box-shadow: 0px 0px 7px 0px var(--gray-400) !important;
     padding: 15px;
 }
 
@@ -569,7 +566,7 @@ i.fa {
 .widget.onboarding-widget-box:hover,
 .widget.links-widget-box:hover,
 .widget.number-widget-box:hover {
-    box-shadow: 0px 0px 8px var(--gray-400) !important;
+    box-shadow: 0px 0px 10px var(--gray-400) !important;
     transition: all 0.25s ease;
 }
 
