@@ -340,8 +340,7 @@ i.fa {
 }
 
 .navbar-home img {
-    width: 140px !important;
-    max-height: fit-content !important;
+    max-height: 65px !important;
 }
 
 .page-form .form-control,
