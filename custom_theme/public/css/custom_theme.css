@@ -56,7 +56,7 @@
     --site-color-blue-hover-dark: #039bc5;
     --site-color-dark-blue-hover-dark: #211d61;
     --site-color-purple-dark-hover: #b9337d;
-    
+
     --fw-semibold: 600;
     --fw-bold: 700;
 
@@ -133,9 +133,11 @@ i.fa {
 .page-head .dropdown-item,
 .page-head .dropdown-item,
 .navbar .dropdown-item,
-.navbar .dropdown-item {
+.navbar .dropdown-divider {
     color: var(--dropdown-item-text-color);
     transition: all 0.15s ease;
+    background-color: var(--site-widget-bg);
+    /* cursor: pointer !important; */
 }
 
 .page-head .btn.btn-default,
@@ -621,21 +623,19 @@ input {
 .desk-sidebar .standard-sidebar-item:hover .icon,
 .navbar-collapse .search-bar .awesomplete>ul>li,
 .navbar-collapse .search-bar input#navbar-search,
-header ul.navbar-nav .nav-item>a {
+header ul.navbar-nav .nav-item>.nav-link {
     transition: all 0.2s ease;
-}
-
-header ul.navbar-nav .nav-item>a {
-    min-width: 40px;
-    height: 40px;
 }
 
 header ul.navbar-nav .vertical-bar.d-sm-block {
     display: none !important;
 }
 
-header ul.navbar-nav .nav-item:not(:last-child)>a {
-    border-radius: 8px;
+header ul.navbar-nav .nav-item:not(:last-child)>.nav-link {
+    border-radius: 8px !important;
+    height: 36px;
+    outline: unset;
+    border-width: 0;
     text-align: center;
     background: #fff;
     display: flex;
@@ -643,10 +643,11 @@ header ul.navbar-nav .nav-item:not(:last-child)>a {
     justify-content: center;
     padding: 0 10px !important;
     color: var(--DF-color-primary);
+    cursor: pointer;
+    appearance: none;
 }
-
-header ul.navbar-nav .nav-item:not(:last-child)>a:focus,
-header ul.navbar-nav .nav-item:not(:last-child)>a:hover {
+header ul.navbar-nav .nav-item:not(:last-child)>.nav-link:hover,
+header ul.navbar-nav .nav-item:not(:last-child)>.nav-link:focus {
     background: var(--DF-color-primary);
     color: var(--btn-hover-text-color);
     --icon-stroke: var(--btn-hover-text-color);
@@ -681,14 +682,16 @@ header ul.navbar-nav .nav-item:last-child>a:hover {
 
 .navbar-collapse .search-bar .awesomplete>ul>li[aria-selected=true],
 .page-head .dropdown-item:focus,
-.navbar .dropdown-item:focus {
+.navbar .dropdown-item:focus,
+.navbar .dropdown-divider:focus {
     color: var(--btn-hover-text-color);
     background-color: var(--DF-color-primary);
 }
 
 .navbar-collapse .search-bar .awesomplete>ul>li:hover,
 .page-head .dropdown-item:hover,
-.navbar .dropdown-item:hover {
+.navbar .dropdown-item:hover,
+.navbar .dropdown-divider:hover {
     color: var(--btn-hover-text-color);
     background-color: var(--DF-color-primary-hover);
 }
@@ -775,8 +778,8 @@ html {
 
 
 header .dropdown-navbar-user .avatar {
-    width: 100%;
-    height: 100%
+    width: 40px;
+    height: 40px
 }
 
 /* .avatar-frame {
